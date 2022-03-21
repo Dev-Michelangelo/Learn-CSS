@@ -5,6 +5,13 @@
         <title>Login Page</title>
     </head>
     <style>
+        /*전체 묶음*/ 
+        .wrap{
+            background-color: green;
+            width: 300px;
+
+        }
+        /*title 묶음*/
         .Mytitle{
             /*Background*/
             /*백그라운드 컬러 지정*/
@@ -21,6 +28,11 @@
             /*모서리 둥글게*/
             border-radius: 10px;
             
+            /*여백 간격 조정*/
+            /*안쪽여백*/
+            padding-top: 40px;
+            /*바깥은 margin*/
+            
             /*Text*/
             /*글자 색 지정*/
             color: white;
@@ -30,14 +42,17 @@
         }
     </style>
     <body>
-        <!--div tag 를 통해 묶음처리.-->
-        <div class="Mytitle">
-            <h1>Login Page</h1>
-            <h5>Input your ID/PW</h5>
-        </div>
+        <!--전체 가운데 정령을 위한 묶음처리-->
+        <div class="wrap">
+            <!--div tag 를 통해 묶음처리-->
+            <div class="Mytitle">
+                <h1>Login Page</h1>
+                <h5>Input your ID/PW</h5>
+            </div>
 
-        <p>ID: <input type="text"></p>
-        <p>PW: <input type="text"></p>
-        <button>Login</button>
+            <p>ID: <input type="text"></p>
+            <p>PW: <input type="text"></p>
+            <button>Login</button>
+        </div>
     </body>
 </html>
